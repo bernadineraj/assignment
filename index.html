@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>  
+        Name: <input type="text" name="first_name">  <br>   <br> 
+        Age: <input type="number" name="age">   <br>  <br> 
+        location: <input type="text" name="location">    <br> <br> 
+        <input type="submit" value="Submit">  
+    </form>  
+</body>
+<script>
+    const data ={};
+    const options ={
+        method: 'POST',
+        headers: {
+            'Çontent-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    };
+        fetch('/user', options);
+    
+
+</script>
+</html>
